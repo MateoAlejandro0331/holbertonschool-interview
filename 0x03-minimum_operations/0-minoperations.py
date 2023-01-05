@@ -11,7 +11,7 @@ def minOperations(n):
         return 0
     nOperations = 0
     half = 2
-    while (n > 1):
+    while n > 1:
         if n % half == 0:
             nOperations += half
             n /= half
