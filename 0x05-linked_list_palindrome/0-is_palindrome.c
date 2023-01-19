@@ -44,7 +44,11 @@ int is_palindrome(listint_t **head)
 		if (copy[y] == copy[x])
 			y++, x--;
 		else
+		{
+			free(copy);
 			return (0);
+		}
 	}
+	free(copy);
 	return (1);
 }
