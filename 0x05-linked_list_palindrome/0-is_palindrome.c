@@ -31,6 +31,8 @@ int is_palindrome(listint_t **head)
 		return (1);
 
 	copy = malloc(sizeof(int) * length);
+	if (!copy)
+		return (0);
 
 	aux = *head;
 	while (aux)
